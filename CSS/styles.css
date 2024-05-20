@@ -1,0 +1,90 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: var(--size-14);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--size-20);
+  padding: var(--size-10) var(--size-30) var(--size-10) var(--size-30);
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--size-10) var(--size-30) var(--size-10) var(--size-30);
+}
+
+.navbar img {
+  width: var(--size-150);
+  position: absolute;
+}
+
+.navbar-nav ul li {
+  color: var(--font-color-base);
+}
+
+.nav-link a {
+  color: var(--font-color-base);
+}
+
+.bg-header {
+  background-image: url(../saas-project-assets/backgrounds/background-top.svg);
+}
+
+.hero-wrapper {
+  display: flex;
+  width: 1024px;
+  height: 446px;
+  padding: var(--size-10) var(--size-30) 0 var(--size-30);
+}
+
+.left-hero {
+  width: 477px;
+  height: 406px;
+  padding: 0px 0px 60px 0px;
+  text-align: left;
+  align-content: center;
+}
+
+.left-hero .hero-header {
+  color: var(--black);
+  font-weight: 500;
+  font-size: var(--size-40);
+  line-height: 48.41px;
+  width: 334px;
+  height: 144px;
+  margin-bottom: 0;
+}
+
+.left-hero p {
+  color: var(--font-color-base);
+  font-size: var(--size-14);
+  font-weight: 500;
+}
+
+.left-hero-button {
+  margin-top: var(--size-30);
+}
+
+.left-hero-button a:nth-last-child(1) {
+  margin-left: 30px;
+}
+
+.right-hero {
+  width: 477px;
+  height: 406px;
+}
+
+.right-hero-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.google-logo {
+  width: 60px;
+  height: 60px;
+}
