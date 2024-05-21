@@ -12,7 +12,7 @@
   --danger: #ff8b8d;
   --grad-1: #a1ecff;
   --grad-2: #7dbcff;
-  --btn-blue: #2476FF;
+  --btn-blue: #2476ff;
 
   --size-10: 0.625rem;
   --size-14: 0.875rem;
@@ -46,7 +46,8 @@ body {
   background-color: var(--white);
 }
 
-.container {
+.container,
+.topSection {
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -91,7 +92,8 @@ body {
 }
 
 @media (min-width: 992px) {
-  .container {
+  .container,
+  .topSection {
     max-width: 1024px;
   }
 }

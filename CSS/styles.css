@@ -7,8 +7,12 @@ body {
 .navbar-nav {
   display: flex;
   align-items: center;
-  gap: var(--size-20);
-  padding: var(--size-10) var(--size-30) var(--size-10) var(--size-30);
+  gap: var(--size-30);
+  padding: 6px 14px 6px 14px;
+}
+
+#topNav {
+  min-width: 1024px;
 }
 
 .navbar .container {
@@ -31,15 +35,20 @@ body {
   color: var(--font-color-base);
 }
 
-.bg-header {
+.topSection {
+  position: relative;
   background-image: url(../saas-project-assets/backgrounds/background-top.svg);
+  top: -1px;
+  left: 0.5px;
+  height: 517px;
 }
 
 .hero-wrapper {
   display: flex;
   width: 1024px;
   height: 446px;
-  padding: var(--size-10) var(--size-30) 0 var(--size-30);
+  padding: var(--size-40) var(--size-30) 0 var(--size-30);
+  gap: 30px;
 }
 
 .left-hero {
@@ -72,6 +81,7 @@ body {
 
 .left-hero-button a:nth-last-child(1) {
   margin-left: 30px;
+  color: var(--btn-blue);
 }
 
 .right-hero {
@@ -80,11 +90,68 @@ body {
 }
 
 .right-hero-logo {
+  position: fixed;
+  padding: 16px;
   width: 80px;
   height: 80px;
+  border: 2px solid var(--white);
+  align-content: center;
+  text-align: center;
+  border-radius: var(--size-40);
+  background-color: var(--white);
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
+}
+
+.right-hero-logo img {
+  width: 48px;
+  height: 48px;
+}
+
+div.right-hero-logo.asana {
+  padding: 0;
+  top: 145px;
+  right: 450px;
+}
+div.right-hero-logo.calendar {
+  top: 440px;
+  right: 452px;
+}
+div.right-hero-logo.weave {
+  top: 310px;
+  right: 580px;
+}
+div.right-hero-logo.paypal {
+  top: 310px;
+  right: 775px;
+}
+div.right-hero-logo.atlassian {
+  top: 145px;
+  right: 665px;
 }
 
 .google-logo {
+  position: fixed;
   width: 60px;
   height: 60px;
+  padding: 10px;
+  border: 2px solid var(--white);
+  align-content: center;
+  text-align: center;
+  border-radius: var(--size-30);
+  background-color: var(--white);
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
+}
+
+.google-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+div.google-logo.google-a {
+  top: 435px;
+  left: 1115px;
+}
+div.google-logo.google {
+  top: 145px;
+  left: 1025px;
 }
