@@ -76,6 +76,11 @@ body {
   padding: 0.8rem 1.5625rem;
   width: 137px;
   height: 48px;
+  padding-left: 20px;
+}
+
+.fa-circle-play {
+  padding-right: 8px;
 }
 
 .btn-blue {
@@ -93,7 +98,8 @@ body {
 
 @media (min-width: 992px) {
   .container,
-  .topSection {
+  .topSection,
+  footer .container {
     max-width: 1024px;
   }
 }
