@@ -11,15 +11,26 @@ body {
   padding: 6px 14px 6px 14px;
 }
 
-#topNav {
-  min-width: 1024px;
+.navbar-toggler {
+  border: none;
+  font-size: var(--size-20);
+  position: absolute;
+  right: var(--size-20);
+  outline: none;
+  background-color: transparent;
+}
+
+.navbar-toggler span {
+  cursor: pointer;
+  pointer-events: none;
 }
 
 .navbar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--size-10) var(--size-30) var(--size-10) var(--size-30);
+  padding: var(--size-20) var(--size-30) var(--size-20) var(--size-30);
+  right: 340px;
 }
 
 .navbar img {
@@ -35,25 +46,17 @@ body {
   color: var(--font-color-base);
 }
 
-.topSection {
-  position: relative;
+.bg-header {
   background-image: url(../saas-project-assets/backgrounds/background-top.svg);
-  top: -1px;
-  left: 0.5px;
-  height: 517px;
 }
 
 .hero-wrapper {
   display: flex;
-  width: 1024px;
-  height: 446px;
-  padding: var(--size-40) var(--size-30) 0 var(--size-30);
-  gap: 30px;
 }
 
 .left-hero {
-  width: 477px;
-  height: 406px;
+  min-width: 477px;
+  min-height: 406px;
   padding: 0px 0px 60px 0px;
   text-align: left;
   align-content: center;
@@ -64,8 +67,8 @@ body {
   font-weight: 500;
   font-size: var(--size-40);
   line-height: 48.41px;
-  width: 334px;
-  height: 144px;
+  min-width: 334px;
+  min-height: 144px;
   margin-bottom: 0;
 }
 
@@ -85,8 +88,8 @@ body {
 }
 
 .right-hero {
-  width: 477px;
-  height: 406px;
+  min-width: 477px;
+  min-height: 406px;
 }
 
 .right-hero-logo {
@@ -183,6 +186,7 @@ div.google-logo.google {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--size-20);
   padding: var(--size-20);
 }
@@ -230,7 +234,6 @@ div.google-logo.google {
 
 .left-banner {
   width: 450px;
-  height: 470px;
   text-align: left;
   align-content: center;
 }
@@ -240,7 +243,7 @@ div.google-logo.google {
   font-weight: 500;
   font-size: var(--size-40);
   line-height: 48.41px;
-  width: 390px;
+  max-width: 390px;
   height: 62px;
   font-weight: 500;
   font-size: 26px;
@@ -248,7 +251,7 @@ div.google-logo.google {
 }
 
 .right-banner {
-  width: 504px;
+  max-width: 504px;
   height: 470px;
 }
 
@@ -279,16 +282,8 @@ div.google-logo.google {
   color: var(--font-color-base);
 }
 
-.fa-circle {
-  grid-area: fa-circle;
-}
-.bullet-text {
-  grid-area: bullet-text;
-}
-
 .bullet-lists {
   display: flex;
-  gap: 25px;
   text-align: center;
   font-weight: 500;
   font-size: var(--size-16);
@@ -299,17 +294,18 @@ div.google-logo.google {
   height: 145px;
 }
 
+.bullet-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .bullet-circle .fa-circle {
   width: 50px;
   height: 50px;
   text-align: center;
   color: var(--btn-blue);
   font-size: var(--size-10);
-}
-
-.bullet-circle {
-  align-self: flex-end;
-  width: 90px;
 }
 
 .bullet-circle ul li {
@@ -347,6 +343,7 @@ div.google-logo.google {
 
 .hubspot-flex {
   display: flex;
+  justify-content: center;
   gap: 60px;
 }
 
@@ -437,6 +434,12 @@ div.google-logo.google {
   margin-bottom: var(--size-100);
 }
 
+.pricing-title p {
+  color: var(--font-color-base);
+  font-weight: 500;
+  font-size: var(--size-16);
+}
+
 .plan {
   padding: 40px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
@@ -449,20 +452,20 @@ div.google-logo.google {
 }
 
 .plan-price {
+  display: flex;
+  justify-content: center;
+}
+
+.plan-price-number {
   font-size: var(--size-50);
-  position: relative;
-  width: 114px;
   height: 61px;
 }
 
 .plan-price-text {
-  position: absolute;
-  top: 28px;
-  right: 7px;
-  padding: 0px 0px 0px 0px;
   font-size: var(--size-20);
   font-weight: 500;
   color: var(--font-color-base);
+  align-content: end;
 }
 
 .plan p {
@@ -474,7 +477,6 @@ div.google-logo.google {
 }
 
 .plan :nth-last-child(1) {
-  font-size: 12px;
   font-weight: 500;
 }
 
@@ -514,10 +516,9 @@ div.google-logo.google {
 
 .hire-us {
   background-color: rgba(32, 51, 91, 1);
-  width: 1024px;
-  height: 708px;
   display: flex;
   gap: 60px;
+  background-image: url(../saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg);
 }
 
 .hire-us-left {
@@ -708,8 +709,7 @@ select#country {
 }
 
 .footer-top {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  display: flex;
   gap: 20px;
   color: var(--font-color-base);
   font-weight: 500;
@@ -717,6 +717,7 @@ select#country {
   font-family: "Open Sans", sans-serif;
   margin-top: var(--size-100);
   padding: 0px 20px 0px 20px;
+  justify-content: center;
 }
 
 .footer-top img {
@@ -728,8 +729,8 @@ select#country {
   margin-left: var(--size-10);
 }
 
-.fa-phone span {
-  color: var(--btn-blue);
+.fa-phone a {
+  color: var(--font-color-base);
 }
 .fa-location-arrow {
   margin-bottom: var(--size-20);
@@ -740,6 +741,11 @@ select#country {
   flex-direction: column;
   width: 350px;
   margin-bottom: 20px;
+}
+
+.front-about-grid {
+  display: flex;
+  gap: 30px;
 }
 
 .front-about {
@@ -759,6 +765,10 @@ select#country {
   color: var(--font-color-base);
   font-size: var(--size-14);
   font-weight: 500;
+}
+
+.front-about a i {
+  margin-right: var(--size-10);
 }
 
 .front-about span {
