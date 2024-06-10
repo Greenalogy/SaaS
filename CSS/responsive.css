@@ -76,7 +76,7 @@
   }
 
   .benefits {
-    margin-top: 300px;
+    margin-top: 500px;
     margin-bottom: var(--size-50);
   }
 
@@ -85,7 +85,7 @@
   }
 
   .benefits-cards {
-    max-width: 350px;
+    max-width: 340px;
   }
 
   .benefits-cards-links ul li p {
@@ -171,10 +171,6 @@
     margin: 0;
   }
 
-  /* .plan p {
-    min-width: 600px;
-  } */
-
   .pricing-btn {
     text-align: center;
   }
@@ -224,6 +220,20 @@
     padding: 30px 20px 30px 20px;
   }
 
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  #fname {
+    width: 49%;
+  }
+
+  #lname {
+    width: 49%;
+  }
+
   .front-about-grid {
     margin-left: 50px;
     display: grid;
@@ -258,6 +268,10 @@
   [aria-expanded="true"] ~ ul li a {
     margin-right: 20px;
     color: var(--font-color-base);
+  }
+
+  .cards {
+    gap: var(--size-10);
   }
 
   .left-banner,
@@ -315,7 +329,7 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
   [aria-controls="navbarDropdown"] {
     display: block;
   }
@@ -386,7 +400,7 @@
   }
 
   .banner-frame {
-    margin-top: 250px;
+    margin-top: var(--size-150);
   }
 
   .banner-frame img {
@@ -464,6 +478,10 @@
     width: 330px;
   }
 
+  .hire-us-right {
+    padding: 0;
+  }
+
   .hire-us-top h2 {
     text-align: center;
   }
@@ -487,6 +505,11 @@
     flex-direction: column;
     width: 270px;
     gap: 10px;
+  }
+
+  #fname,
+  #lname {
+    width: auto;
   }
 
   .form-select {

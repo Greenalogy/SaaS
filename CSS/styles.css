@@ -160,13 +160,11 @@ div.google-logo.google {
 }
 
 .key-benefits {
-  padding: 120px 0px 80px 0px;
   margin-bottom: var(--size-150);
 }
 
 .benefits {
   text-align: center;
-  margin-top: var(--size-150);
 }
 
 .benefits h1 {
@@ -514,11 +512,15 @@ div.google-logo.google {
   text-align: left;
 }
 
-.hire-us {
+.hireSection {
+  background-image: url(../saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg);
   background-color: rgba(32, 51, 91, 1);
+  background-size: cover;
+}
+
+.hire-us {
   display: flex;
   gap: 60px;
-  background-image: url(../saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg);
 }
 
 .hire-us-left {
